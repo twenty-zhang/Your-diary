@@ -5,19 +5,14 @@
   <parent>
     <groupId>com.diary</groupId>
     <artifactId>your-diary</artifactId>
-    <version>0.0.1</version>
+    <version>${parent.project.version}</version>
   </parent>
   <artifactId>diary-dao</artifactId>
   <name>diary-dao</name>
-  <url>http://maven.apache.org</url>
+  <version>0.0.1</version>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 </project>

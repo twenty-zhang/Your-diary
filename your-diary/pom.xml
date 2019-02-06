@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.diary</groupId>
 	<artifactId>your-diary</artifactId>
-	<version>0.0.1</version>
+	<version>${parent.project.version}</version>
 	<packaging>pom</packaging>
 
 	<name>your-diary</name>
@@ -18,6 +18,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<parent.project.version>0.0.1</parent.project.version>
 	</properties>
 	<dependencies>
 		<dependency>
