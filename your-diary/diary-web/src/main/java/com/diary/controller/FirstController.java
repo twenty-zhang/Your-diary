@@ -15,6 +15,10 @@ public class FirstController {
 		return ConstantStr.HELLO_WORLD;
 	}
 	
+	/**
+	 * push test
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(FirstController.class, args);
 	}
