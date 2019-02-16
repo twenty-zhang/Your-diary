@@ -1,7 +1,8 @@
-package com.diary.entrance;
+package com.diary.spring.entrance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 项目入口类
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @CreateDate 2019年2月9日
  */
 @SpringBootApplication
+@ComponentScan("com.diary.spring.config")
 public class URDiaryEntrance {
 
 	/**
