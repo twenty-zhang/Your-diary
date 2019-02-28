@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>你的日记</title>
+<!-- <link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous"> -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/carousel.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">你的日记</a>
+		</nav>
+	</header>
+	<main role="main">
+	<div class="carousel p-5 slide"
+		data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="d-block w-100">
+					<h1>这里是名人名言之类的东西, 从数据库抓取</h1>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="d-block w-100">
+					<h1>抓取十个左右就好了, 动态生成放在这里</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container jumbotron shadow">
+		<h1 class="display-4">你好，旅人</h1>
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">登录邮箱/手机号/账户名</label> <input
+					type="email" class="form-control" id="exampleInputEmail1"
+					aria-describedby="emailHelp" placeholder="Enter email">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">密码</label> <input type="password"
+					class="form-control" id="exampleInputPassword1"
+					placeholder="Password">
+			</div>
+			<div class="form-group form-check">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">自动登录</label>
+			</div>
+			<button type="submit" class="btn btn-primary">进入</button>
+		</form>
+	</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted"> 😊由一群闲人, 利用闲暇时间做的. 源码托管在<a
+				href="https://github.com/twenty-zhang/Your-diary">GitHub</a>. 2019
+			</span>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$("#button_learn").on("click", function() {
+			$.get("resp");
+		});
+	</script>
+
+</body>
+</html>

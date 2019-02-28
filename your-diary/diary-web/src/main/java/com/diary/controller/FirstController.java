@@ -21,9 +21,8 @@ public class FirstController {
 	@RequestMapping(value="/home")
 	public String home(){
 		LogCreater.getLogger("FirstController").warn("中文错误尝试~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		return "index.jsp";
+		return "WEB-INF/index.jsp";
 	}
-	
 	
 	@RequestMapping(value="/home/page")
 	@ResponseBody

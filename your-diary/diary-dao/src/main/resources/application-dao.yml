@@ -1,0 +1,10 @@
+mybatis: 
+  type-aliases-package: org.diary.entity
+  configuration: 
+    mapUnderscoreToCamelCase: true
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.100:3306/diary?useUnicode=true&characterEncoding=utf-8
+    username: twenty
+    password: 903777508

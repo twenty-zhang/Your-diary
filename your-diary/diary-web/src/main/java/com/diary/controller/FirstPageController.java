@@ -1,5 +1,8 @@
 package com.diary.controller;
 
+import org.diary.dao.CityMapper;
+import org.diary.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -10,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class FirstPageController {
+	@Autowired
+	private CityMapper cityMapper;
 	
 	/**
 	 * 
@@ -18,6 +23,8 @@ public class FirstPageController {
 	 */
 	@RequestMapping("/")
 	public String Firstpage() {
-		return "forward:/default.html";
+		User findByState = cityMapper.findByState(1);
+		System.out.println(findByState);
+		return "default.html";
 	}
 }
