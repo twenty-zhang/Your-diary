@@ -6,5 +6,6 @@ spring:
   datasource: 
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.0.100:3306/diary?useUnicode=true&characterEncoding=utf-8
+#    我的英文名和QQ号啊,没有敏感数据
     username: twenty
     password: 903777508
